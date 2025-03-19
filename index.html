@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Web Output</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, th, td {
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        .even { color: green; }
+        .odd { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>Javascript Web Output #1</h1>
+
+    <label for="txtNum">Insert any Positive Numbers:</label>
+    <input type="text" id="txtNum">
+    <button id="btnInsert">Insert</button>
+    <button id="btnClearEntry">Clear Entry</button>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Inserted Numbers</legend>
+        <table id="tblNumbers"></table>
+    </fieldset>
+
+    <p><b>HIGHEST:</b> <span id="highestNum">-</span></p>
+    <p><b>LOWEST:</b> <span id="lowestNum">-</span></p>
+
+    <button id="btnClearItems">Clear Items</button>
+    <button id="btnTotal">Get Total</button>
+    <button id="btnIdentify">Identify Highest and Lowest Number</button>
+
+    <label for="sortOrder">Sort by:</label>
+    <select id="sortOrder">
+        <option value="">Please select</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+
+    <script src="main.js"></script>
+</body>
+</html>
